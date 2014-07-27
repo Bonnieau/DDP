@@ -1,0 +1,48 @@
+Predicting Iris Species based on Sepal and Petal measurement
+========================================================
+author: Bonnie
+date: `r date()`
+
+Application Summary
+========================================================
+
+This is a predictive web application.
+It predicts iris species by Sepal and Petal measurement
+Application functions include:
+- Get iris Sepal and Petal measurement input by user
+- predict Iris specie by user input data
+- View the model tree plot
+
+Web interface
+========================================================
+
+- It contains one sidebar and one main panel.
+- The sidebar contains sliders and submit button
+- The main panel contains 2 tabs
+- Tab 1 : displays user inputs and predicted results
+- Tab 2 : display the model tree plot
+
+User Guide
+========================================================
+
+- Launch the application at 
+  http://bonnieau.shinyapps.io/DS_DDP/
+- Click the Tree plot tab to view the model tree
+- Select the Sepal and Petal measurement by sliders
+- Click submit button to predict outcome
+- Click the Predict output to view the results
+
+Prediction Model
+========================================================
+
+- The model is built with tree-based model: rpart
+- classification tree is built for categorical outcome 
+- The training data is r iris dataset
+```{r echo=FALSE}
+str(iris)
+```
+
+
+
+
+
